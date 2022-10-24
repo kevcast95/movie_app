@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+
+/* Color variables */
+$main-bg: #0d0d0d;
+$red-primary: #c0180f;
+$red-secundary: #af150f;
+$footer-bg: #252523;
+
+
+/* Fonts varibales */
+$main-font: 'Ubuntu', sans-serif;
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}

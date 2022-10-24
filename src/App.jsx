@@ -1,12 +1,9 @@
 import React from 'react';
 import './App.css';
+import BrowserList from './BrowserList';
 
 function App() {
-  return (
-    <div className="App">
-      <div>HOla</div>
-    </div>
-  );
+  return <BrowserList />;
 }
 
 export default App;

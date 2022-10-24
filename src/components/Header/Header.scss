@@ -1,0 +1,25 @@
+@import '../../Genreal.scss';
+
+.header {
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  @extend .flex-row;
+  justify-content: space-between;
+  padding: 20px 50px;
+  &-logo {
+    @extend .flex-row;
+    &-red {
+      font-weight: bold;
+      color: $red-secundary;
+    }
+  }
+  &-menu {
+    width: 60%;
+    list-style-type: none;
+    @extend .flex-row;
+    justify-content: space-between;
+  }
+}
