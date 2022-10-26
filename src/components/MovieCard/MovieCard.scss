@@ -1,0 +1,28 @@
+@import '../../Genreal.scss';
+
+.card-container{
+  width: 120px;
+  height: 180px;
+  position: relative;
+  color: #fff;
+  margin: 10px 10px 60px 10px;
+  & img{
+    width: 120px;
+    height: 180px;
+  }&-ad{
+    position: absolute;
+    display: flex;
+    top: 10px;
+    height: 20px;
+    width: 50px;
+    border-radius: 0 5px 5px 0;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 0, 0, 0.644);
+  }&-description{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+}

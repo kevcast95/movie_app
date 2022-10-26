@@ -1,19 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from '../Button';
 import './Landing.scss';
 
-function Landing() {
+function Landing({ cover }) {
+  const movieBg = `https://image.tmdb.org/t/p/w500${cover?.backdrop_path}`;
   return (
-    <section className="landing">
+    <section className="landing" style={{ backgroundImage: `url(${movieBg})` }}>
       <div className="landing-cover">
-        <h1>THE LOST CITY</h1>
+        <h1>{cover?.title}</h1>
         <p className="landing-cover-description">
-          Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Eum autem perferendis quae,
-          eligendi nihil accusantium itaque doloremqu
-          excepturi esse suscipit consequuntur a quo
-          voluptatum optio illum necessitatibus, sunt
-          voluptates cumque.
+          {cover?.overview}
         </p>
         <div className="landing-cover-properties">
           <span>
@@ -35,5 +32,9 @@ function Landing() {
     </section>
   );
 }
+
+Landing.propTypes = {
+  cover: PropTypes.objectOf.isRequired,
+};
 
 export default Landing;
