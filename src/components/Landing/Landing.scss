@@ -7,6 +7,7 @@
   background-image: url('https://images.pling.com/img/00/00/62/03/23/1573193/d677e028522106d55a0aca5c0fa85ec713faf7bd5a848aa964e4cc7ff7e513e44084.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: none;
   color: #fff;
   &-cover {
     width: 100%;
@@ -15,18 +16,30 @@
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.682);
     padding: 50px;
+    & > h1 {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
     &-description {
-      width: 60%;
+      width: 350px;
+      margin-bottom: 12px;
     }
     &-properties {
-      width: 60%;
+      width: 350px;
       @extend .flex-row;
       align-items: center;
       font-size: 12px;
       padding: 10px 0;
+      margin-bottom: 12px;
       & span {
-        margin: 0 8px;
+        text-transform: capitalize;
+        margin: 0 18px;
       }
+    }
+    &-btns {
+      width: 280px;
+      @extend .flex-row;
+      justify-content: space-between;
     }
   }
 }

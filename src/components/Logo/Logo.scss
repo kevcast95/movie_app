@@ -1,0 +1,9 @@
+@import '../../Genreal.scss';
+
+.logo {
+  @extend .flex-row;
+  &-red {
+    font-weight: bold;
+    color: $red-secundary;
+  }
+}

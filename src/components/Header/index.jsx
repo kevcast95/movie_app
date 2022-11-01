@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Logo from '../Logo';
 import './Header.scss';
 
 function Header() {
@@ -7,10 +7,7 @@ function Header() {
 
   return (
     <nav className="header">
-      <div className="header-logo">
-        <p className="header-logo-red">MOVIE</p>
-        <p className="header-logo-white">DOM</p>
-      </div>
+      <Logo />
       <ul className="header-menu">
         {
           menuOps.map((op) => (

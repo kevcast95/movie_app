@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Properties from './Porperties';
 import Button from '../Button';
 import './Landing.scss';
 
@@ -13,19 +14,18 @@ function Landing({ cover }) {
           {cover?.overview}
         </p>
         <div className="landing-cover-properties">
-          <span>
-            164 min.
-          </span>
-          <span>
-            Subtitles
-          </span>
-          <span>
-            Imdb: 9.1/10
-          </span>
+          <Properties
+            date={cover?.release_date}
+            lang={cover?.original_language}
+            rate={cover?.vote_average}
+          />
         </div>
         <div className="landing-cover-btns">
-          <Button>
+          <Button classSelector="primary">
             Play
+          </Button>
+          <Button classSelector="secundary">
+            + Add List
           </Button>
         </div>
       </div>

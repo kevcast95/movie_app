@@ -8,14 +8,8 @@
   left: 0;
   @extend .flex-row;
   justify-content: space-between;
-  padding: 20px 50px;
-  &-logo {
-    @extend .flex-row;
-    &-red {
-      font-weight: bold;
-      color: $red-secundary;
-    }
-  }
+  align-items: center;
+  padding: 40px 60px;
   &-menu {
     width: 60%;
     list-style-type: none;
