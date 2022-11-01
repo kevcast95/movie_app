@@ -1,6 +1,24 @@
+@import '../../Genreal.scss';
+
 .section-banner {
   width: 100%;
   padding: 50px;
+  &__title {
+    width: 100%;
+    @extend .flex-row;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  &__bar {
+    border:none;
+    color:white;
+    width: 200px;
+    border-radius: 8px 0px 0px 8px;
+    height:5px;
+    background:$main-bg;
+    background: linear-gradient(90deg, #af150f, #0d0d0d);
+    margin-left: 20px;
+  }
   &__movies {
     overflow-y: hidden;
     overflow-x: scroll;

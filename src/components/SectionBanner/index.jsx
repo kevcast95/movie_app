@@ -7,7 +7,10 @@ import './SectionBanner.scss';
 function SectionBanner({ movies, title }) {
   return (
     <section className="section-banner">
-      <h1 style={{ color: '#fff' }}>{title}</h1>
+      <div className="section-banner__title">
+        <h1 style={{ color: '#fff' }}>{title}</h1>
+        <span className="section-banner__bar" />
+      </div>
       <div className="section-banner__movies">
         {
           movies.map((movie) => (
